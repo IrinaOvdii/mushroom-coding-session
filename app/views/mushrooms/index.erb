@@ -1,0 +1,67 @@
+<h1>All mushrooms:</h1>
+
+<div class="row">
+  <div class="col-md-12">
+
+    <table>
+      <theader>
+        <tr class="header">
+          <th>classes</th>
+          <th>cap_shape</th>
+          <th>cap_surface</th>
+          <th>cap_color</th>
+          <th>bruises</th>
+          <th>odor</th>
+          <th>gill_attachment</th>
+          <th>gill_spacing</th>
+          <th>gill_size</th>
+          <th>gill_color</th>
+          <th>stalk_shape</th>
+          <th>stalk_root</th>
+          <th>stalk_surface_above_ring</th>
+          <th>stalk_surface_below_ring</th>
+          <th>stalk_color_above_ring</th>
+          <th>stalk_color_below_ring</th>
+          <th>veil_type</th>
+          <th>veil_color</th>
+          <th>ring_number</th>
+          <th>ring_type</th>
+          <th>spore_print_color</th>
+          <th>population</th>
+          <th>habitat</th>
+        </tr>
+    </theader>
+  </div>
+  <div class="col-md-12">
+    <tbody>
+      <% @mushrooms.each do |mushroom| %>
+        <tr>
+          <td><%=mushroom.classes%></td>
+          <td><%=mushroom.cap_shape%></td>
+          <td><%=mushroom.cap_surface%></td>
+          <td><%=mushroom.cap_color%></td>
+          <td><%=mushroom.bruises%></td>
+          <td><%=mushroom.odor%></td>
+          <td><%=mushroom.gill_attachment%></td>
+          <td><%=mushroom.gill_spacing%></td>
+          <td><%=mushroom.gill_size%></td>
+          <td><%=mushroom.gill_color%></td>
+          <td><%=mushroom.stalk_shape%></td>
+          <td><%=mushroom.stalk_root%></td>
+          <td><%=mushroom.stalk_surface_above_ring%></td>
+          <td><%=mushroom.stalk_surface_below_ring%></td>
+          <td><%=mushroom.stalk_color_above_ring%></td>
+          <td><%=mushroom.stalk_color_below_ring%></td>
+          <td><%=mushroom.veil_type%></td>
+          <td><%=mushroom.veil_color%></td>
+          <td><%=mushroom.ring_number%></td>
+          <td><%=mushroom.ring_type%></td>
+          <td><%=mushroom.spore_print_color%></td>
+          <td><%=mushroom.population%></td>
+          <td><%=mushroom.habitat%></td>
+        </tr>
+      <% end %>
+    </tbody>
+    </table>
+  <div>
+</div>
